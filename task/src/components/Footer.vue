@@ -1,9 +1,13 @@
 <template>
    <footer>
     <p>Copyright &copy; 2021</p>
-    <router-link to="/about">About us</router-link>
   </footer>
 </template>
+<script>
+export default {
+  name: 'FooterPage'
+}
+</script>
 
 <style scoped>
 a {

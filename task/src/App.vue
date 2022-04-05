@@ -1,30 +1,58 @@
 <template>
   <div class="container">
     <Header title="Task tracker"/>
+    <Tasks :tasks = "tasks" />
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
+import Tasks from '@/components/Tasks'
 import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
   components: {
     Header,
+    Tasks,
     Footer
+
   },
   data () {
     return {
-      showAddTask: false
+      tasks: []
     }
   },
-  methods: {
-    toggleAddTask () {
-      this.showAddTask = !this.showAddTask
-    }
-  }
+ created() {
+   this.tasks = [
+
+
+     {
+        id: 1, 
+       text: 'laravel',
+       day: 'june 1st',
+       remider: 'true',
+      
+     },
+     
+     {
+        id: 2, 
+       text: 'phyton',
+       day: 'may 1st',
+       remider: 'true',
+      
+     },
+     
+     {
+        id: 3, 
+       text: 'javascript',
+       day: 'december6',
+       remider: 'true',
+      
+     },
+   ]
+ }
 }
 </script>
 

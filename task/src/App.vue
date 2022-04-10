@@ -32,7 +32,7 @@ export default {
         id: 1, 
        text: 'laravel',
        day: 'june 1st',
-       remider: 'true',
+       reminder: true,
       
      },
      
@@ -40,7 +40,7 @@ export default {
         id: 2, 
        text: 'phyton',
        day: 'may 1st',
-       remider: 'true',
+       reminder: true,
       
      },
      
@@ -48,7 +48,7 @@ export default {
         id: 3, 
        text: 'javascript',
        day: 'december6',
-       remider: 'true',
+       reminder: false,
       
      },
    ]

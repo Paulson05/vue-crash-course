@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Header title="Task tracker"/>
+    <AddTask/>
     <Tasks :tasks = "tasks" />
     <Footer />
   </div>
@@ -8,6 +9,7 @@
 
 <script>
 import Header from '@/components/Header'
+import AddTask from '@/components/AddTask'
 import Tasks from '@/components/Tasks'
 import Footer from '@/components/Footer'
 
@@ -16,7 +18,8 @@ export default {
   components: {
     Header,
     Tasks,
-    Footer
+    Footer,
+    AddTask
 
   },
   data () {
